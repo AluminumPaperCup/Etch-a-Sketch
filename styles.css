@@ -1,3 +1,14 @@
 * {
     box-sizing: border-box;
 }
+
+.bigBox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bigBox>div {
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+  }
