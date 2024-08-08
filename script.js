@@ -8,3 +8,10 @@ for (let i = 1; i <= 256; i++) {
     div.classList.add('babyDiv');
     motherDiv.appendChild(div);
 };
+
+motherDiv.addEventListener("mouseover", (event) => {
+    
+    if (event.target.classList.contains('babyDiv')) {
+            event.target.style.backgroundColor = "gray";
+    };
+});
