@@ -13,6 +13,9 @@ gridButton.addEventListener("click", (event) => {
         return;
     };
 
+    // Clear current grid
+    motherDiv.innerHTML = '';
+
 motherDiv.addEventListener("mouseover", (event) => {
     
     if (event.target.classList.contains('babyDiv')) {
