@@ -19,6 +19,16 @@ gridButton.addEventListener("click", (event) => {
     // Calculate new squares based on fixed div size and new grid parameters. Client width used relative to client's window.
     const squareSize = motherDiv.clientWidth / gridSize;
 
+    // Calculation for new grid
+    for (let i = 0; i <= gridSize * gridSize; i++) {
+        const div = document.createElement("div");
+        // Add CSS class for div for precise handling
+        div.classList.add('babyDiv');
+        div.style.width = `${squareSize}px`;
+        div.style.height = `${squareSize}px`;
+        motherDiv.appendChild(div);
+}});
+
 motherDiv.addEventListener("mouseover", (event) => {
     
     if (event.target.classList.contains('babyDiv')) {
