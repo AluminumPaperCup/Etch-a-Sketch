@@ -1,13 +1,10 @@
 // Variable to that contains container for 16x16 grid
 const motherDiv = document.querySelector(".bigBox");
+const gridButton = document.querySelector("#gridButton");
 
-// Function for 16x16 grid that appends to motherDiv
-for (let i = 1; i <= 256; i++) {
-    const div = document.createElement("div");
-    // Add CSS class for div for precise handling
-    div.classList.add('babyDiv');
-    motherDiv.appendChild(div);
-};
+// Function for human input grid that appends to motherDiv
+gridButton.addEventListener("click", (event) => {
+    const grid = prompt("Please enter a number to generate new grid (e.g. 100 = 100 x 100 grid square)", "");
 
 motherDiv.addEventListener("mouseover", (event) => {
     
