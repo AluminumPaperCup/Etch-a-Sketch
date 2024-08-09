@@ -14,7 +14,12 @@
 .bigBox {
     display: flex;
     flex-wrap: wrap;
-}
+    width: 600px; /* Fixed width for the container */
+    height: 600px; /* Fixed height for the container */
+    border: 1px solid rgb(202, 187, 187);
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .bigBox>div:nth-child(16n + 1) {
     width: 100%;
