@@ -21,6 +21,10 @@
     margin-right: auto;
   }
 
+  .babyDiv {
+    background-color: white;
+  }
+  
   .bigBox>div:nth-child(16n + 1) {
     width: 100%;
     height: 0;
