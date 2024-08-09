@@ -16,6 +16,9 @@ gridButton.addEventListener("click", (event) => {
     // Clear current grid
     motherDiv.innerHTML = '';
 
+    // Calculate new squares based on fixed div size and new grid parameters. Client width used relative to client's window.
+    const squareSize = motherDiv.clientWidth / gridSize;
+
 motherDiv.addEventListener("mouseover", (event) => {
     
     if (event.target.classList.contains('babyDiv')) {
