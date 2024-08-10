@@ -30,8 +30,11 @@ gridButton.addEventListener("click", (event) => {
 }});
 
 motherDiv.addEventListener("mouseover", (event) => {
+    const rainbow = ["red", "green", "blue"];
+    const colourPicker = rainbow[Math.floor(Math.random() * rainbow.length)];
     
     if (event.target.classList.contains('babyDiv')) {
-            event.target.style.backgroundColor = "gray";
+            event.target.style.backgroundColor = colourPicker;
     };
 });
+
